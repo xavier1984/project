@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+  <title>ProjectAsista</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
-
     <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="css/bootstrap.css"  >
-
-
+<link rel="stylesheet" href="../css/bootstrap.css"  >
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
-
 <body class="d-flex flex-column h-100">
+    
   <!--Empieza el encabezado-->
     <header>
-      
     <!--Menu de navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
@@ -34,47 +30,51 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-orientation="horizontal">
                               Menu1
                             </a>
-                            
                           </li>
                           <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Menu2
                                 </a>
-                                
                               </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Menu3
                       </a>
-                    
-                    </li>
-                    
+                    </li> 
                   </ul>
                 </div>
               </nav>
-            
               <!--Se cierra el encabezado-->
     </header>
     <!--El contenido-->
             <main role="main" class="flex-shrink-0">
               <div class="container">
-                <h1 class="mt-5">Productos</h1>
-                <form  action="http://localhost:8080/devs/html5/conexion.php" method="POST">
-                <table class="container">
-                <tr>
-                    <td class="mt-5"><label for="Nombre">Nombre</label></td>
-                    <td><input name="Nombre4" type="text"><br></td>
-                </tr>
-                
-                    <td>Estado</td>
-                    <td><select id = "ListaEstado">
-                      <option value = "1">Activo</option>
-                      <option value = "2">Inactivo</option>
-                    </select></td>
-                </tr>
-                    </table>
-                    <button name="btn_enviar" type="submit">Enviar</button>
-                </form>
+                <h1 class="mt-5">Ingrese Sucursal</h1>
+                <form>
+                    <div class="form-group">
+                      <!--Titulo-->
+                      <label for="NombreSucursal">Nombre Empresa</label>
+                      <!--Donde El Usuario va a ingresar los datos-->
+                      <input type="text" class="form-control" id="NombreSucursal" aria-describedby="emailHelp" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmp">Empresa a la que esta Asociado</label>
+                      <select class="form-control" id="exampleInputEmp">
+                          <option value="1">
+                          </option>
+                          <option value="2">Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <!--Donde puede elegir las siguientes opciones-->
+                      <label for="exampleFormEstado">Estado</label>
+                      <select class="form-control form-control-sm" id="exampleFormEstado">
+                          <option value="1">Activo</option>
+                          <option value="2">Inactivo</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
               </div>
             </main>
             <!--Pie de Paguina-->

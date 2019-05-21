@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
                     <!--Se inserta una imagen-->
-                        <img src="/Proyecto/descarga.png" width="70" height="30" alt="">
+                        <img src="Proyecto/descarga.png" width="70" height="30" alt="">
                       </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -57,9 +57,9 @@
     <!--El contenido-->
             <main role="main" class="flex-shrink-0">
               <div class="container">
-                <h1 class="mt-5">Ingrese Empresa devXavier</h1>
+                <h1 class="mt-5 text-center">Ingrese Empresa devXavier</h1>
                 <!--Formula  Para Empresa-->
-                <form action="Proyecto/conexion.php" method="POST">
+                <form action="Proyecto/Empresa.php" method="POST">
                     <div class="form-group">
                       <!--Titulo-->
                       <label for="Nombre4">Nombre Empresa</label>
@@ -68,22 +68,22 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputRuc">Ruc</label>
-                      <input type="text" class="form-control" id="exampleInputRuc" placeholder="Ruc">
+                      <input type="text" class="form-control" id="exampleInputRuc" name="Ruc" placeholder="Ruc">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputDireccion">Direccion</label>
-                      <input type="text" class="form-control" id="exampleInputDireccion" placeholder="Direccion">
+                      <input type="text" class="form-control" id="exampleInputDireccion" name="Direccion" placeholder="Direccion">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputTelefono">Telefono</label>
-                      <input type="text" class="form-control" id="exampleInputTelefono" placeholder="Telefono">
+                      <input type="text" class="form-control" id="exampleInputTelefono" name="Telefono" placeholder="Telefono">
                     </div>
                     <div class="form-group">
                       <!--Donde puede elegir las siguientes opciones-->
                       <label for="exampleFormEstado">Estado</label>
-                      <select class="form-control" id="exampleFormEstado">
-                        <option value="1">Activo</option>
-                        <option value="2">Inactivo</option>
+                      <select class="form-control" id="exampleFormEstado" name="Estado">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
                       </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
@@ -91,8 +91,11 @@
               </div>
             </main>
             <!--Pie de Paguina-->
-            <footer class="footer-middle mt-auto py-3">
-                www.asistanet.com.ec /2019
+            <footer class="footer mt-auto py-3">
+              <div class="container">
+               <!-- <span class="text-muted" a>www.asistanet.com.ec</span>-->
+               <p class="text-center " >www.asistanet.com.ec</p>
+              </div>
             </footer>
              <!--Codigo JS-->
               
@@ -100,7 +103,7 @@
              <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
               
-              
+                    
               
 </body>
 
